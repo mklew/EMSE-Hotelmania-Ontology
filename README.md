@@ -6,7 +6,7 @@ Instructions
 ============
 
 1. Clone this repository `git clone ...`
-2. `cd` into it
+2. `cd` into ontology directory it
 3. do `mvn clean install`
 
 Then you have it in your local maven repository so you can use it as dependency in your group project.
