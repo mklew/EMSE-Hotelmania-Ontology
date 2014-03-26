@@ -4,3 +4,9 @@
 *.jar
 *.war
 *.ear
+.idea/*
+ontology/target/*
+target/*
+**/target/*
+*.iml
+**/*.iml
