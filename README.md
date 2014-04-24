@@ -15,9 +15,9 @@ Add it to pom.xml as dependency
 ```xml
 <dependencies>
     <dependency>
-      <groupId>emse.abs.hotelmania</groupId>
+      <groupId>hotelmania</groupId>
       <artifactId>ontology</artifactId>
-      <version>${project.version}</version>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
 </dependencies>
 ```
