@@ -1,9 +1,7 @@
-package emse.abs.hotelmania.ontology;
+package hotelmania.ontology;
 
 
-import jade.content.*;
-import jade.util.leap.*;
-import jade.core.*;
+import jade.content.Concept;
 
 /**
 * Protege name: Hotel
