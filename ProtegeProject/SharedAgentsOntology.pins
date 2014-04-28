@@ -1,4 +1,4 @@
-; Sat Apr 19 16:33:22 CEST 2014
+; Mon Apr 28 17:11:56 CEST 2014
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -18,6 +18,14 @@
 ([Concept] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE TRUE))
+
+([Contract] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([DayEvent] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
 
 ([Hotel] of  %3AJADE-CLASS
 
@@ -46,6 +54,10 @@
 
 	(%3AJADE-UNNAMED-SLOT FALSE))
 
+([SignContract] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
 ([SimpleJADEAbstractOntology_00014] of  %3ASTANDARD-FACET
 
 	(%3AASSOCIATED-SLOT [%3AJADE-NAME]))
@@ -53,3 +65,7 @@
 ([SimpleJADEAbstractOntology_00016] of  %3ASTANDARD-FACET
 
 	(%3AASSOCIATED-SLOT [%3AJADE-UNNAMED-SLOT]))
+
+([SubscribeToDayEvent] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))

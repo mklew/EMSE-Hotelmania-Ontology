@@ -1,4 +1,4 @@
-; Sat Apr 19 16:33:22 CEST 2014
+; Mon Apr 28 17:11:56 CEST 2014
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -7,9 +7,25 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
+	(single-slot SharedAgentsOntology_Class1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot SharedAgentsOntology_Class3
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot room_service_staff
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot %3ASUPPORT
 		(type STRING)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot chef_2stars
+		(type INTEGER)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot %3APACKAGE
 ;+		(comment "packagename")
@@ -40,6 +56,10 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot recepcionist_experienced
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-DIRECTORY
 		(type STRING)
 ;+		(cardinality 0 1)
@@ -49,6 +69,10 @@
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
 ;+		(associated-facet SimpleJADEAbstractOntology_00016)
+		(create-accessor read-write))
+	(single-slot recepcionist_novice
+		(type INTEGER)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-JAVA-CODE
 		(type STRING)
@@ -63,6 +87,14 @@
 	(multislot %3AJADE-INCLUDED-PROPERTIES
 		(type INSTANCE)
 ;+		(allowed-classes)
+		(create-accessor read-write))
+	(single-slot chef_1stars
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot chef_3stars
+		(type INTEGER)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-PACKAGE
 		(type STRING)
@@ -80,6 +112,10 @@
 	(single-slot %3AJADE-JAVA-BASE-CLASS
 		(type STRING)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot day
+		(type INTEGER)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-NAME
 		(type STRING)
@@ -196,11 +232,60 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
+(defclass SubscribeToDayEvent
+	(is-a AgentAction)
+	(role concrete))
+
+(defclass SignContract
+	(is-a AgentAction)
+	(role concrete)
+	(single-slot hotel
+		(type INSTANCE)
+;+		(allowed-classes Hotel)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
 (defclass Hotel
 	(is-a Concept)
 	(role concrete)
 	(single-slot hotel_name
 		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Contract
+	(is-a Concept)
+	(role concrete)
+	(single-slot chef_3stars
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot recepcionist_experienced
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot room_service_staff
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot chef_2stars
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot chef_1stars
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot recepcionist_novice
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass DayEvent
+	(is-a Concept)
+	(role concrete)
+	(single-slot day
+		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
