@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: RegistrationRequest
 * @author ontology bean generator
-* @version 2014/04/30, 18:30:21
+* @version 2014/04/30, 18:41:54
 */
 public class RegistrationRequest implements AgentAction {
 
