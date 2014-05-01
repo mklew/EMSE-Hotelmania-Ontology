@@ -1,4 +1,4 @@
-package emse.abs.hotelmania.ontology;
+package hotelmania.ontology;
 
 
 import jade.content.*;
@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: Contract
 * @author ontology bean generator
-* @version 2014/04/30, 18:41:54
+* @version 2014/05/1, 06:37:44
 */
 public class Contract implements Concept {
 
