@@ -9,7 +9,7 @@ import jade.core.CaseInsensitiveString;
 
 /** file: SharedAgentsOntology.java
  * @author ontology bean generator
- * @version 2014/05/1, 06:37:44
+ * @version 2014/05/5, 13:17:33
  */
 public class SharedAgentsOntology extends jade.content.onto.Ontology  {
   //NAME
@@ -23,6 +23,8 @@ public class SharedAgentsOntology extends jade.content.onto.Ontology  {
 
 
    // VOCABULARY
+    public static final String NOTIFICATIONDAYEVENT_DAYEVENT="dayEvent";
+    public static final String NOTIFICATIONDAYEVENT="NotificationDayEvent";
     public static final String SIGNCONTRACT_CONTRACT="contract";
     public static final String SIGNCONTRACT_HOTEL="hotel";
     public static final String SIGNCONTRACT="SignContract";
@@ -67,6 +69,8 @@ public class SharedAgentsOntology extends jade.content.onto.Ontology  {
     // adding AID(s)
 
     // adding Predicate(s)
+    PredicateSchema notificationDayEventSchema = new PredicateSchema(NOTIFICATIONDAYEVENT);
+    add(notificationDayEventSchema, hotelmania.ontology.NotificationDayEvent.class);
 
 
     // adding fields
@@ -81,6 +85,7 @@ public class SharedAgentsOntology extends jade.content.onto.Ontology  {
     registrationRequestSchema.add(REGISTRATIONREQUEST_HOTEL, hotelSchema, ObjectSchema.OPTIONAL);
     signContractSchema.add(SIGNCONTRACT_HOTEL, hotelSchema, ObjectSchema.OPTIONAL);
     signContractSchema.add(SIGNCONTRACT_CONTRACT, contractSchema, ObjectSchema.MANDATORY);
+    notificationDayEventSchema.add(NOTIFICATIONDAYEVENT_DAYEVENT, dayEventSchema, ObjectSchema.MANDATORY);
 
     // adding name mappings
 

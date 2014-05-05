@@ -1,4 +1,4 @@
-; Mon Apr 28 17:11:56 CEST 2014
+; Mon May 05 13:17:23 CEST 2014
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -22,6 +22,11 @@
 	(single-slot %3ASUPPORT
 		(type STRING)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot contract
+		(type INSTANCE)
+;+		(allowed-classes Contract)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot chef_2stars
 		(type INTEGER)
@@ -90,6 +95,11 @@
 		(create-accessor read-write))
 	(single-slot chef_1stars
 		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot dayEvent
+		(type INSTANCE)
+;+		(allowed-classes DayEvent)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot chef_3stars
@@ -243,6 +253,11 @@
 		(type INSTANCE)
 ;+		(allowed-classes Hotel)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot contract
+		(type INSTANCE)
+;+		(allowed-classes Contract)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Hotel
@@ -292,3 +307,12 @@
 (defclass Predicate "The common ancestor for all predicates in an ontology (e.g. FatherOf...)"
 	(is-a USER)
 	(role abstract))
+
+(defclass NotificationDayEvent
+	(is-a Predicate)
+	(role concrete)
+	(single-slot dayEvent
+		(type INSTANCE)
+;+		(allowed-classes DayEvent)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))

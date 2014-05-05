@@ -1,4 +1,4 @@
-; Mon Apr 28 17:11:56 CEST 2014
+; Mon May 05 13:17:23 CEST 2014
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -35,15 +35,19 @@
 
 	(%3AJADE-UNNAMED-SLOT FALSE))
 
+([NotificationDayEvent] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
 ([Predicate] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE TRUE))
 
 ([project+annotation] of  %3APROJECT-ANNOTATION
 
-	(%3ALOCATION "/Users/mareklewandowski/EMSE-Hotelmania-Ontology/ontology/src/main/java")
+	(%3ALOCATION "E:\\elts\\Documentos\\GitHub\\EMSE-Hotelmania-Ontology\\ontology\\src")
 	(%3AONTOLOGYNAME "SharedAgents")
-	(%3APACKAGE "emse.abs.hotelmania.ontology")
+	(%3APACKAGE "hotelmania.ontology")
 	(%3ASUPPORT "j2se"))
 
 ([RegistrationRequest] of  %3AJADE-CLASS
