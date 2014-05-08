@@ -1,4 +1,4 @@
-; Mon May 05 13:17:23 CEST 2014
+; Fri May 09 01:26:31 CEST 2014
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -6,8 +6,8 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[SharedAgentsOntology_ProjectKB_Class10004]
-		[SharedAgentsOntology_ProjectKB_Class10005]))
+		[SharedAgentsOntology_ProjectKB_Class10019]
+		[SharedAgentsOntology_ProjectKB_Class10020]))
 
 ([CLSES_TAB] of  Widget
 
@@ -30,7 +30,7 @@
 	(property_list [ProjectKB_7094_00037])
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
 
-([KB_183964_Class3] of  Map
+([KB_447392_Class3] of  Map
 )
 
 ([KB_883944_Instance_0] of  Property_List
@@ -421,8 +421,8 @@
 	(customized_instance_widgets
 		[SimpleJADEAbstractOntology_ProjectKB_00109]
 		[SimpleJADEAbstractOntology_ProjectKB_00503]
-		[STANDARD_SLOT_FORM_WIDGET]
 		[SimpleJADEAbstractOntology_ProjectKB_00104]
+		[STANDARD_SLOT_FORM_WIDGET]
 		[PAL_FORM_WIDGET]
 		[SimpleJADEAbstractOntology_ProjectKB_00303]
 		[STANDARD_CLASS_FORM_WIDGET])
@@ -607,31 +607,31 @@
 ([SharedAgentsOntology_ProjectKB_Class10] of  Property_List
 )
 
-([SharedAgentsOntology_ProjectKB_Class10004] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([SharedAgentsOntology_ProjectKB_Class10005] of  String
+([SharedAgentsOntology_ProjectKB_Class10019] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([SharedAgentsOntology_ProjectKB_Class10006] of  Map_Entry
+([SharedAgentsOntology_ProjectKB_Class10020] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([SharedAgentsOntology_ProjectKB_Class10021] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([SharedAgentsOntology_ProjectKB_Class10007] of  Map_Entry
+([SharedAgentsOntology_ProjectKB_Class10022] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([SharedAgentsOntology_ProjectKB_Class10008] of  Map_Entry
+([SharedAgentsOntology_ProjectKB_Class10023] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
@@ -715,9 +715,9 @@
 ([SimpleJADEAbstractOntology_ProjectKB_00214] of  Map
 
 	(entries
-		[SharedAgentsOntology_ProjectKB_Class10006]
-		[SharedAgentsOntology_ProjectKB_Class10007]
-		[SharedAgentsOntology_ProjectKB_Class10008]))
+		[SharedAgentsOntology_ProjectKB_Class10021]
+		[SharedAgentsOntology_ProjectKB_Class10022]
+		[SharedAgentsOntology_ProjectKB_Class10023]))
 
 ([SimpleJADEAbstractOntology_ProjectKB_00303] of  Widget
 

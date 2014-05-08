@@ -1,7 +1,19 @@
-; Mon May 05 13:17:23 CEST 2014
+; Fri May 09 01:26:31 CEST 2014
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
+
+([Account] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([AccountStatus] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([AccountStatusQueryRef] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
 
 ([addresses] of  %3AJADE-SLOT
 
@@ -23,6 +35,10 @@
 
 	(%3AJADE-IGNORE FALSE))
 
+([CreateAccountRequest] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
 ([DayEvent] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
@@ -36,6 +52,14 @@
 	(%3AJADE-UNNAMED-SLOT FALSE))
 
 ([NotificationDayEvent] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([NumberOfClients] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([NumberOfClientsQueryRef] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 

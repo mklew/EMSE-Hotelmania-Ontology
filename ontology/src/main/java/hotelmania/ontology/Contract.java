@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: Contract
 * @author ontology bean generator
-* @version 2014/05/5, 13:17:33
+* @version 2014/05/9, 01:27:27
 */
 public class Contract implements Concept {
 
@@ -32,6 +32,17 @@ public class Contract implements Concept {
    }
    public int getRecepcionist_experienced() {
      return this.recepcionist_experienced;
+   }
+
+   /**
+* Protege name: day
+   */
+   private int day;
+   public void setDay(int value) { 
+    this.day=value;
+   }
+   public int getDay() {
+     return this.day;
    }
 
    /**

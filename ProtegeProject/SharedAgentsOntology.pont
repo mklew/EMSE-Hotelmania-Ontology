@@ -1,4 +1,4 @@
-; Mon May 05 13:17:23 CEST 2014
+; Fri May 09 01:26:31 CEST 2014
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -15,6 +15,11 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot account
+		(type INSTANCE)
+;+		(allowed-classes Account)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot room_service_staff
 		(type INTEGER)
 ;+		(cardinality 1 1)
@@ -28,14 +33,14 @@
 ;+		(allowed-classes Contract)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot chef_2stars
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(single-slot %3APACKAGE
 ;+		(comment "packagename")
 		(type STRING)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot chef_2stars
+		(type INTEGER)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot hotel
 		(type INSTANCE)
@@ -59,6 +64,10 @@
 	(single-slot %3ALOCATION
 ;+		(comment "The location to store files into")
 		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot SharedAgentsOntology_Class10003
+		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot recepcionist_experienced
@@ -97,18 +106,22 @@
 		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(single-slot id_account
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot dayEvent
 		(type INSTANCE)
 ;+		(allowed-classes DayEvent)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot chef_3stars
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-PACKAGE
 		(type STRING)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot chef_3stars
+		(type INTEGER)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-GENERATE-ONTOLOGY
 		(type SYMBOL)
@@ -116,20 +129,28 @@
 		(default TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot num_clients
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(multislot addresses
 		(type STRING)
 		(create-accessor read-write))
+	(single-slot balance
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot %3AJADE-JAVA-BASE-CLASS
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-NAME
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot day
 		(type INTEGER)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-PROPERTIES-NAME
-		(type STRING)
-;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot name_
 		(type STRING)
@@ -260,6 +281,31 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
+(defclass AccountStatusQueryRef
+	(is-a AgentAction)
+	(role concrete)
+	(single-slot id_account
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass CreateAccountRequest
+	(is-a AgentAction)
+	(role concrete)
+	(single-slot hotel
+		(type INSTANCE)
+;+		(allowed-classes Hotel)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass NumberOfClientsQueryRef
+	(is-a AgentAction)
+	(role concrete)
+	(single-slot hotel_name
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
 (defclass Hotel
 	(is-a Concept)
 	(role concrete)
@@ -276,6 +322,10 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot recepcionist_experienced
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot day
 		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
@@ -304,6 +354,23 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
+(defclass Account
+	(is-a Concept)
+	(role concrete)
+	(single-slot balance
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot hotel
+		(type INSTANCE)
+;+		(allowed-classes Hotel)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot id_account
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
 (defclass Predicate "The common ancestor for all predicates in an ontology (e.g. FatherOf...)"
 	(is-a USER)
 	(role abstract))
@@ -314,5 +381,22 @@
 	(single-slot dayEvent
 		(type INSTANCE)
 ;+		(allowed-classes DayEvent)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass AccountStatus
+	(is-a Predicate)
+	(role concrete)
+	(single-slot account
+		(type INSTANCE)
+;+		(allowed-classes Account)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass NumberOfClients
+	(is-a Predicate)
+	(role concrete)
+	(single-slot num_clients
+		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
