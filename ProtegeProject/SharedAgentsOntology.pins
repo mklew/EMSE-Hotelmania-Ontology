@@ -1,4 +1,4 @@
-; Fri May 09 01:26:31 CEST 2014
+; Thu May 15 02:50:43 CEST 2014
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -27,9 +27,21 @@
 
 	(%3AJADE-IGNORE TRUE))
 
+([BookingOffer] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([BookRoom] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
 ([Concept] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE TRUE))
+
+([ContentElementList] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
 
 ([Contract] of  %3AJADE-CLASS
 
@@ -43,7 +55,15 @@
 
 	(%3AJADE-IGNORE FALSE))
 
+([EndSimulation] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
 ([Hotel] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([HotelInformation] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -67,12 +87,20 @@
 
 	(%3AJADE-IGNORE TRUE))
 
+([Price] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
 ([project+annotation] of  %3APROJECT-ANNOTATION
 
-	(%3ALOCATION "E:\\elts\\Documentos\\GitHub\\EMSE-Hotelmania-Ontology\\ontology\\src")
-	(%3AONTOLOGYNAME "SharedAgents")
+	(%3ALOCATION "/Users/alberthmontero/git/EMSE-Hotelmania-Ontology/ontology/src")
+	(%3AONTOLOGYNAME "SharedAgentsOntology")
 	(%3APACKAGE "hotelmania.ontology")
 	(%3ASUPPORT "j2se"))
+
+([QueryHotelmaniaInformation] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
 
 ([RegistrationRequest] of  %3AJADE-CLASS
 
@@ -93,6 +121,10 @@
 ([SimpleJADEAbstractOntology_00016] of  %3ASTANDARD-FACET
 
 	(%3AASSOCIATED-SLOT [%3AJADE-UNNAMED-SLOT]))
+
+([Stay] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
 
 ([SubscribeToDayEvent] of  %3AJADE-CLASS
 
