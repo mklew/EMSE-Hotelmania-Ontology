@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: Stay
 * @author ontology bean generator
-* @version 2014/05/15, 02:41:36
+* @version 2014/05/16, 00:30:29
 */
 public class Stay implements Predicate {
 

@@ -1,4 +1,4 @@
-; Thu May 15 02:50:43 CEST 2014
+; Fri May 16 00:34:55 CEST 2014
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -29,31 +29,31 @@
 ;+		(allowed-classes Contract)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot price
-		(type FLOAT)
-;+		(cardinality 0 1)
+	(single-slot chef_2stars
+		(type INTEGER)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot %3APACKAGE
 ;+		(comment "packagename")
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot chef_2stars
-		(type INTEGER)
-;+		(cardinality 1 1)
+	(single-slot price
+		(type FLOAT)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot roomPrice
 		(type INSTANCE)
 ;+		(allowed-classes Price)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot checkIn
-		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot hotel
 		(type INSTANCE)
 ;+		(allowed-classes Hotel)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot checkIn
+		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-GENERATE-BEANS
@@ -139,13 +139,13 @@
 ;+		(allowed-classes DayEvent)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot %3AJADE-PROPERTIES-PACKAGE
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot chef_3stars
 		(type INTEGER)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-PACKAGE
+		(type STRING)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-GENERATE-ONTOLOGY
 		(type SYMBOL)
@@ -168,13 +168,13 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot %3AJADE-PROPERTIES-NAME
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot day
 		(type INTEGER)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-NAME
+		(type STRING)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot name_
 		(type STRING)
@@ -330,10 +330,6 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass QueryHotelmaniaInformation
-	(is-a AgentAction)
-	(role concrete))
-
 (defclass BookRoom
 	(is-a AgentAction)
 	(role concrete)
@@ -472,10 +468,6 @@
 		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
-
-(defclass ContentElementList
-	(is-a Predicate)
-	(role concrete))
 
 (defclass Stay
 	(is-a Predicate)

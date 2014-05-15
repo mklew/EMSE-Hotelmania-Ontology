@@ -1,4 +1,4 @@
-; Thu May 15 02:50:43 CEST 2014
+; Fri May 16 00:34:55 CEST 2014
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -38,10 +38,6 @@
 ([Concept] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE TRUE))
-
-([ContentElementList] of  %3AJADE-CLASS
-
-	(%3AJADE-IGNORE FALSE))
 
 ([Contract] of  %3AJADE-CLASS
 
@@ -93,14 +89,10 @@
 
 ([project+annotation] of  %3APROJECT-ANNOTATION
 
-	(%3ALOCATION "/Users/alberthmontero/git/EMSE-Hotelmania-Ontology/ontology/src")
+	(%3ALOCATION "/Users/alberthmontero/git")
 	(%3AONTOLOGYNAME "SharedAgentsOntology")
 	(%3APACKAGE "hotelmania.ontology")
 	(%3ASUPPORT "j2se"))
-
-([QueryHotelmaniaInformation] of  %3AJADE-CLASS
-
-	(%3AJADE-IGNORE FALSE))
 
 ([RegistrationRequest] of  %3AJADE-CLASS
 

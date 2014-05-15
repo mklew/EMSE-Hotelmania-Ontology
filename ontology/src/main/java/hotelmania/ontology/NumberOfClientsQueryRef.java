@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: NumberOfClientsQueryRef
 * @author ontology bean generator
-* @version 2014/05/9, 01:27:27
+* @version 2014/05/16, 00:30:29
 */
 public class NumberOfClientsQueryRef implements AgentAction {
 
