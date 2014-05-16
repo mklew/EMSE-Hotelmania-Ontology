@@ -8,9 +8,9 @@ import jade.core.*;
 /**
 * Protege name: HotelInformation
 * @author ontology bean generator
-* @version 2014/05/16, 00:30:29
+* @version 2014/05/16, 12:54:20
 */
-public class HotelInformation implements Concept {
+public class HotelInformation implements Predicate {
 
    /**
 * Protege name: rating
