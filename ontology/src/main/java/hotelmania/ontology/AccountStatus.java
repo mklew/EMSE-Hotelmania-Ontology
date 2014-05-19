@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: AccountStatus
 * @author ontology bean generator
-* @version 2014/05/19, 15:38:47
+* @version 2014/05/19, 15:47:16
 */
 public class AccountStatus implements Predicate {
 
