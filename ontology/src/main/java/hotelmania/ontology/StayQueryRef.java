@@ -6,11 +6,11 @@ import jade.util.leap.*;
 import jade.core.*;
 
 /**
-* Protege name: BookRoom
+* Protege name: StayQueryRef
 * @author ontology bean generator
 * @version 2014/05/19, 15:19:23
 */
-public class BookRoom implements AgentAction {
+public class StayQueryRef implements Predicate {
 
    /**
 * Protege name: stay
@@ -21,17 +21,6 @@ public class BookRoom implements AgentAction {
    }
    public Stay getStay() {
      return this.stay;
-   }
-
-   /**
-* Protege name: bookingOffer
-   */
-   private BookingOffer bookingOffer;
-   public void setBookingOffer(BookingOffer value) { 
-    this.bookingOffer=value;
-   }
-   public BookingOffer getBookingOffer() {
-     return this.bookingOffer;
    }
 
 }

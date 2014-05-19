@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: Account
 * @author ontology bean generator
-* @version 2014/05/16, 12:54:20
+* @version 2014/05/19, 15:19:23
 */
 public class Account implements Concept {
 
