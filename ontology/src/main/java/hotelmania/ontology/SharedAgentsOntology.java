@@ -9,7 +9,7 @@ import jade.core.CaseInsensitiveString;
 
 /** file: SharedAgentsOntologyOntology.java
  * @author ontology bean generator
- * @version 2014/05/19, 15:47:16
+ * @version 2014/05/19, 15:56:07
  */
 public class SharedAgentsOntology extends jade.content.onto.Ontology  {
   //NAME
@@ -58,6 +58,7 @@ public class SharedAgentsOntology extends jade.content.onto.Ontology  {
     public static final String ACCOUNT_HOTEL="hotel";
     public static final String ACCOUNT_BALANCE="balance";
     public static final String ACCOUNT="Account";
+    public static final String PRICE_AMOUNT="amount";
     public static final String PRICE="Price";
     public static final String STAY_CHECKIN="checkIn";
     public static final String STAY_CHECKOUT="checkOut";
@@ -142,6 +143,7 @@ public class SharedAgentsOntology extends jade.content.onto.Ontology  {
     contractSchema.add(CONTRACT_RECEPCIONIST_NOVICE, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.MANDATORY);
     staySchema.add(STAY_CHECKOUT, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.MANDATORY);
     staySchema.add(STAY_CHECKIN, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.MANDATORY);
+    priceSchema.add(PRICE_AMOUNT, (TermSchema)getSchema(BasicOntology.FLOAT), ObjectSchema.MANDATORY);
     accountSchema.add(ACCOUNT_BALANCE, (TermSchema)getSchema(BasicOntology.FLOAT), ObjectSchema.MANDATORY);
     accountSchema.add(ACCOUNT_HOTEL, hotelSchema, ObjectSchema.MANDATORY);
     accountSchema.add(ACCOUNT_ID_ACCOUNT, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.MANDATORY);

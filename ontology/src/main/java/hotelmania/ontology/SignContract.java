@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: SignContract
 * @author ontology bean generator
-* @version 2014/05/19, 15:47:16
+* @version 2014/05/19, 15:56:07
 */
 public class SignContract implements AgentAction {
 
