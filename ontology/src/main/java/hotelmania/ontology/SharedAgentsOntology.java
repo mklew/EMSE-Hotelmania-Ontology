@@ -9,14 +9,14 @@ import jade.core.CaseInsensitiveString;
 
 /** file: SharedAgentsOntologyOntology.java
  * @author ontology bean generator
- * @version 2014/05/19, 15:19:23
+ * @version 2014/05/19, 15:38:47
  */
 public class SharedAgentsOntology extends jade.content.onto.Ontology  {
   //NAME
   public static final String ONTOLOGY_NAME = "SharedAgentsOntology";
   // The singleton instance of this ontology
   private static ReflectiveIntrospector introspect = new ReflectiveIntrospector();
-  private static Ontology theInstance = new SharedAgentsOntologyOntology();
+  private static Ontology theInstance = new SharedAgentsOntology();
   public static Ontology getInstance() {
      return theInstance;
   }
@@ -43,7 +43,7 @@ public class SharedAgentsOntology extends jade.content.onto.Ontology  {
     public static final String SIGNCONTRACT_CONTRACT="contract";
     public static final String SIGNCONTRACT_HOTEL="hotel";
     public static final String SIGNCONTRACT="SignContract";
-    public static final String BOOKROOM_BOOKINGOFFER="bookingOffer";
+    public static final String BOOKROOM_PRICE="price";
     public static final String BOOKROOM_STAY="stay";
     public static final String BOOKROOM="BookRoom";
     public static final String REGISTRATIONREQUEST_HOTEL="hotel";
@@ -151,7 +151,7 @@ public class SharedAgentsOntology extends jade.content.onto.Ontology  {
     numberOfClientsQueryRefSchema.add(NUMBEROFCLIENTSQUERYREF_DAY, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.MANDATORY);
     registrationRequestSchema.add(REGISTRATIONREQUEST_HOTEL, hotelSchema, ObjectSchema.OPTIONAL);
     bookRoomSchema.add(BOOKROOM_STAY, staySchema, ObjectSchema.OPTIONAL);
-    bookRoomSchema.add(BOOKROOM_BOOKINGOFFER, bookingOfferSchema, ObjectSchema.OPTIONAL);
+    bookRoomSchema.add(BOOKROOM_PRICE, (TermSchema)getSchema(BasicOntology.FLOAT), ObjectSchema.OPTIONAL);
     signContractSchema.add(SIGNCONTRACT_HOTEL, hotelSchema, ObjectSchema.OPTIONAL);
     signContractSchema.add(SIGNCONTRACT_CONTRACT, contractSchema, ObjectSchema.MANDATORY);
     createAccountRequestSchema.add(CREATEACCOUNTREQUEST_HOTEL, hotelSchema, ObjectSchema.OPTIONAL);

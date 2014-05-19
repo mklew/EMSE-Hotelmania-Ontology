@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: NumberOfClients
 * @author ontology bean generator
-* @version 2014/05/19, 15:19:23
+* @version 2014/05/19, 15:38:47
 */
 public class NumberOfClients implements Predicate {
 
