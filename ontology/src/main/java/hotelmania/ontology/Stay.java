@@ -8,9 +8,9 @@ import jade.core.*;
 /**
 * Protege name: Stay
 * @author ontology bean generator
-* @version 2014/05/23, 16:46:49
+* @version 2014/05/23, 22:29:18
 */
-public class Stay implements Predicate {
+public class Stay implements Concept {
 
    /**
 * Protege name: checkOut

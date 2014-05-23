@@ -1,4 +1,4 @@
-; Fri May 23 16:46:17 CEST 2014
+; Fri May 23 22:29:24 CEST 2014
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -93,7 +93,7 @@
 
 ([project+annotation] of  %3APROJECT-ANNOTATION
 
-	(%3ALOCATION "/Users/alberthmontero/git")
+	(%3ALOCATION "/Users/alberthmontero/git/EMSE-Hotelmania-Ontology/ontology/src/main/java")
 	(%3AONTOLOGYNAME "SharedAgentsOntology")
 	(%3APACKAGE "hotelmania.ontology")
 	(%3ASUPPORT "j2se"))
@@ -119,6 +119,10 @@
 	(%3AASSOCIATED-SLOT [%3AJADE-UNNAMED-SLOT]))
 
 ([Stay] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([StayQueryRef] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 

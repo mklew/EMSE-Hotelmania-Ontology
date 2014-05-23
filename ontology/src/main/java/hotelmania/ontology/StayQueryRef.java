@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: StayQueryRef
 * @author ontology bean generator
-* @version 2014/05/19, 15:56:07
+* @version 2014/05/23, 22:29:18
 */
 public class StayQueryRef implements Predicate {
 

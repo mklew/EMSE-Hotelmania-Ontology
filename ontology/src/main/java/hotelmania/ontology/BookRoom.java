@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: BookRoom
 * @author ontology bean generator
-* @version 2014/05/23, 16:46:49
+* @version 2014/05/23, 22:29:18
 */
 public class BookRoom implements AgentAction {
 
@@ -24,14 +24,14 @@ public class BookRoom implements AgentAction {
    }
 
    /**
-* Protege name: bookingOffer
+* Protege name: price
    */
-   private BookingOffer bookingOffer;
-   public void setBookingOffer(BookingOffer value) { 
-    this.bookingOffer=value;
+   private Price price;
+   public void setPrice(Price value) { 
+    this.price=value;
    }
-   public BookingOffer getBookingOffer() {
-     return this.bookingOffer;
+   public Price getPrice() {
+     return this.price;
    }
 
 }
