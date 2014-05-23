@@ -1,4 +1,4 @@
-; Fri May 16 12:53:41 CEST 2014
+; Fri May 23 16:46:17 CEST 2014
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -68,6 +68,10 @@
 	(%3AJADE-UNNAMED-SLOT FALSE))
 
 ([NotificationDayEvent] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([NotificationEndSimulation] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 

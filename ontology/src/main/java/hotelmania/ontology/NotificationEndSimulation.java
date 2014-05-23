@@ -6,10 +6,10 @@ import jade.util.leap.*;
 import jade.core.*;
 
 /**
-* Protege name: EndSimulation
+* Protege name: NotificationEndSimulation
 * @author ontology bean generator
 * @version 2014/05/23, 16:46:49
 */
-public class EndSimulation implements AgentAction {
+public class NotificationEndSimulation implements Predicate {
 
 }
